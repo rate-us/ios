@@ -1,0 +1,6 @@
+framework module Pods_rateUsIOS {
+  umbrella header "Pods-rateUsIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
