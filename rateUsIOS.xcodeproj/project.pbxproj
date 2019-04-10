@@ -14,6 +14,8 @@
 		A2B11E6E225D27BB00705F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B11E6D225D27BB00705F97 /* Assets.xcassets */; };
 		A2B11E71225D27BB00705F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B11E6F225D27BB00705F97 /* LaunchScreen.storyboard */; };
 		A2B11E81225D3FB500705F97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2B11E80225D3FB500705F97 /* GoogleService-Info.plist */; };
+		A2B11E8A225DA32400705F97 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B11E89225DA32400705F97 /* Login.storyboard */; };
+		A2B11E8C225DA53E00705F97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B11E8B225DA53E00705F97 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A2B11E70225D27BB00705F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2B11E72225D27BB00705F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2B11E80225D3FB500705F97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2B11E89225DA32400705F97 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A2B11E8B225DA53E00705F97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DFA72EF1B6D2B2A8DE4B6063 /* Pods_rateUsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rateUsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EDA3C819672A82051CF365 /* Pods-rateUsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rateUsIOS.release.xcconfig"; path = "Target Support Files/Pods-rateUsIOS/Pods-rateUsIOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A2B11E68225D27BB00705F97 /* ViewController.swift */,
+				A2B11E8B225DA53E00705F97 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			children = (
 				A2B11E6F225D27BB00705F97 /* LaunchScreen.storyboard */,
 				A2B11E6A225D27BB00705F97 /* Main.storyboard */,
+				A2B11E89225DA32400705F97 /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 				A2B11E71225D27BB00705F97 /* LaunchScreen.storyboard in Resources */,
 				A2B11E81225D3FB500705F97 /* GoogleService-Info.plist in Resources */,
 				A2B11E6E225D27BB00705F97 /* Assets.xcassets in Resources */,
+				A2B11E8A225DA32400705F97 /* Login.storyboard in Resources */,
 				A2B11E6C225D27BB00705F97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,15 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-rateUsIOS/Pods-rateUsIOS-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
 			);
@@ -254,15 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-rateUsIOS-checkManifestLockResult.txt",
 			);
@@ -276,8 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-rateUsIOS/Pods-rateUsIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -286,8 +283,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
@@ -306,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B11E8C225DA53E00705F97 /* LoginViewController.swift in Sources */,
 				A2B11E69225D27BB00705F97 /* ViewController.swift in Sources */,
 				A2B11E67225D27BB00705F97 /* AppDelegate.swift in Sources */,
 			);
