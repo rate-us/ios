@@ -23,6 +23,9 @@
                                 <color key="backgroundColor" red="0.19542886491049738" green="0.2098850470390935" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Register/ Login"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="ymX-eb-QSy" eventType="touchDown" id="OUp-Fy-jsi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92139801776810704" green="0.5311321759837615" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

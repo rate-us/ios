@@ -17,4 +17,8 @@ class LoginViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        print("button tapped")
+    }
 }
+
